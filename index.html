@@ -47,7 +47,38 @@
 
       <p>Same applies to the <a href="https://github.com/istSOS/android-demo">Android demo.</a></p>
 
-      <h1>Future work to be done<h1>
+      <h1>Aspects about technical implementation</h1>
+
+      <p>As the project was designed and implemented from scratch, it shouldn't be considered as the very final version. The Java Core is a workable package that so far provides access to the core functionalities of istsos and nothing extra. </p>
+
+      <p>There were some problems during the development with the Async-Http-Client library not being supported in Android because it was designed for Java 8. </p>
+
+      <p>In order to make it more accessible, backwards compatibility for Java 7 was added. Keeping this into account, while imported in
+      Android as a module, it makes use of the Android Async Http for handling HTTP requests instead of the previously mentioned library.
+      More details about this can be found in the documentation for the Java Core and Android demo. </p>
+
+      <p>After all, the Java Core can be used to create independent java projects that rely on istSOS, as a result it doesn't include
+        special means for handling graphical visualization in Android.</p>
+
+      <h1>Future work to be done</h1>
+
+      <p>Below is a list with some of things I think would be useful: </p>
+
+      <ul>
+          <li>Extend the capabilities of the Java core in Android direction</li>
+          <li>Design and implement a graphical library for istSOS Android</li>
+          <li>Develop an improved version of the Android demo</li>
+          <li>Add new features to the Java Core</li>
+          <li>Improve, optimize the code to ensure a better performance</li>
+          <li>Make the Java core available on Maven center, jcenter to avoid the process of jar-ing/importing into the IDE</li> 
+          <li>Integrate Travis CI</li>
+      </ul> 
+
+      <h1>Acknowledgement</h1>
+
+      <p>All of this wouldn't have been possible without the support of istSOS mentors, Mirko Cardoso, and Milan Antonovic. They have provided guidance and support for the duration for the duration of the whole project</p>
+
+
 
         </section>
 
